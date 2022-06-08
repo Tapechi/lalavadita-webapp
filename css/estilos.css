@@ -28,6 +28,7 @@ html{
     color :rgb(0, 0, 0);  
     text-shadow: 3px 3px 2px rgba(152, 150, 207, 0.7);
     padding-left: 3px;
+    
 }
 
 /* ----- INDEX ----- */
@@ -270,7 +271,7 @@ textarea {
 
     .menuLi{
         margin-left: 1rem;
-        
+        padding-right: 1rem;
         
     }
     
@@ -498,4 +499,3 @@ button {
   
   
  
-
