@@ -5,9 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+   
+    
+    <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet">
     <title>La lavadita</title>
   </head>
@@ -24,7 +27,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                       <div class=" navg navbar-nav w-100 justify-content-center " >
                         <a class="nav-item nav-link active" href="#">inicio</a>
-                        <a class="nav-item nav-link" href="#">Quienes somos</a>
+                        <a class="nav-item nav-link" href="./pages/Auto.html">Quienes somos</a>
                         <a class="nav-item nav-link" href="#">Contacto</a>
                         <a class="nav-item nav-link" href="#">Trabajos</a>
                         <a class="nav-item nav-link" href="#">Servicios</a>
@@ -40,8 +43,10 @@
                     <div class="col-sm-12">
                         <h2> La<span> Lavadita</span> </h2>
                         <p>Somos una empresa que ofrece el servicio de auto lavado rápida de manera eficiente y económica, con los mejores servicios, promociones y el mejor equipo de auto lavado existente, ademas podes disfrutar de nuestro servicio de bufed atendido por nuestro personal capacitado basados en la honestidad, confianza y responsabilidad.</p>
-                        <a href="" class="btn btn-yo"> <span class="boton">Reserva tu visita</span> </a>
-                    </div>
+                        <button type="button" class="btn btn-yo" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <span class="boton" >Reserva tu visita</span>
+                        </button>
+                      </div>
 
                 </div>
             </div>
@@ -50,11 +55,129 @@
     </header>
 
         <section>
-          hola
+          <h3 class="text-center">
+            Donde estamos
+          </h3>
+          
+          <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-2 ">
+              <div class="col-sm-12 col-md-4 col-lg-4" >
+                <div class="col">
+                <div class="card">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8197183792936!2d-58.600206168160476!3d-34.60872000275547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8575f97df01%3A0x44a12c111c482df!2sGral.%20Victorica%2C%20El%20Palomar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654752209436!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Lavadero "Palomar</h5>
+                    <p class="card-text">Gral Victorica - Buenos aires</p>
+                    <p class="card-text">Tel : 11-4859-7895</p>
+                    <p class="card-text">Lunes a viernes de 9 a 17hs</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="col"></div>
+                <div class="card">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3016837926916!2d-58.3638649!3d-34.6470833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334aecc96ab35%3A0x8de9f290df69e8e2!2sR%C3%ADo%20Cuarto%20800%2C%20C1168AFB%20CABA!5e0!3m2!1ses-419!2sar!4v1654752064725!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Lavadero "Barracas"</h5>
+                    <p class="card-text">Rio cuarto 800- caba</p>
+                    <p class="card-text">Tel : 11-4985-7559</p>
+                    <p class="card-text">Lunes a sabados de 9 a 17hs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.082291688032!2d-58.36507698417441!3d-34.62736066625757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334c8f32801d7%3A0xc9e0137b961676bb!2sMinistro%20Brin%20491%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sus!4v1654750766895!5m2!1ses!2sus" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Lavadero "La boca"</h5>
+                    <p class="card-text">Ministros brin 491 - caba</p>
+                    <p class="card-text">Tel : 11-4859-7895</p>
+                    <p class="card-text">Lunes a sabados de 9 a 17hs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
         </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header justify-content-center ">
+                <h5 class="modal-title" id="exampleModalLabel">CONTACTO</h5>
+              </div>
+              <div class="modal-body">
+                <article class="form">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="11-0000-0000">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Mail</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mail@ejemplo.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="">
+                    <label class="" for="llegada">Fecha estimada :</label>
+                    <input type="datetime-local" id="llegada" name="fecha-hora-llegada" row="3">
+                  </div>
+                  <label for="exampleColorInput" class="textarea">Color</label>
+                  <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#000fff" title="Elegir color">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Servicio estandar
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Servicio Premium
+                    </label>
+                  </div>
+                </article>
+                
+              
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <footer>
+          <div class="container-fluid">
+            <nav class="menu">
+                <ul class="menuUl">
+                <li class="menuLifoter"><a href="/home">Algo más</a></li>
+                <li class="menuLifoter"><a href="/home">Ayudanos a mejorar</a></li>
+                <li class="menuLifoter"><a href="/blog">Sugerencias</a></li>
+              </ul>
+            </nav>
+        </div>
+
+        
+
+        </footer>
+        
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
