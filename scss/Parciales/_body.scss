@@ -1,0 +1,154 @@
+body{
+    background-color: rgb(236, 236, 236);
+    #containter-cards{
+        padding: 1rem;
+        background-color: white;
+        border-radius: 2%;
+    }
+}
+
+h5{
+    color: #2f7bbe; 
+}
+
+@media (max-width: 768px){
+    .card{
+        border: none;
+        
+    }
+    
+}
+
+.navg a{
+    color: #f4f4f4!important;
+    font-family: 'Montserrat' ;
+    font-size: 23px;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 2px rgba(0, 0, 2, 0.7);
+  }
+
+  .heroQuienesSomos{
+    justify-content: space-around
+  }
+
+  .cardLavadero {
+    margin-bottom: 1rem;
+  }
+
+.trabajo {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 200px;
+	position: relative;
+}
+
+.trabajo::after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-radius: 100px;
+	background: #DCDFD9;
+	border: 2px solid #1b3231;
+	position: absolute;
+	z-index: 2;
+	top: calc(50% - 9px);
+	left: calc(50% - 9px);
+}
+
+.modelo {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: calc(42% + 20px);
+	font-size: 32px;
+	font-weight: normal;
+}
+
+.foto {
+	width: 42%;
+	border: 10px solid #fff;
+	position: relative;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.foto::after {
+	content: "";
+	display: block;
+	border: 20px solid transparent;
+	border-left: 20px solid #fff;
+	position: absolute;
+	right: -50px;
+	top: calc(50% - 20px);
+}
+
+.foto img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.trabajo:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.trabajo:nth-child(even) .modelo {
+	justify-content: end;
+}
+
+.trabajo:nth-child(even) .foto::after {
+	content: "";
+	border: 20px solid transparent;
+	border-right: 20px solid #fff;
+	right: initial;
+	left: -50px;
+}
+
+.bodyServicios{
+	background: linear-gradient(0deg, #ffffff 0%, #267ca1 100%);
+}
+
+.servicios{
+	display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: column;
+    align-items: center;
+	min-height: 100vh;
+	justify-content: space-evenly;
+	.serviciosBody{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
+    	animation: bg-pan-tl 30s infinite alternate;
+		.serviciosTitulo{
+			color: #ffffffe0;
+			z-index: 1;
+		}
+		.serviciosBodyText{
+			padding: 1rem;
+			color: white;
+			z-index: 1;
+		}	
+	}
+	}
+
+	.serviciosBody:before{
+		content: "";
+		width: 100%;
+		min-height: 100vh;
+		position: absolute;
+		top:0;
+		left: 0;
+		background-image: linear-gradient(rgba(0, 8, 8, 0.356), rgba(19,18,0, 0));
+		
+}
+	
+	

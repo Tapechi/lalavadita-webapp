@@ -1,0 +1,18 @@
+.modal-body {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(29,122,137,1) 0%, rgba(29,127,141,1) 0%, rgba(31,98,154,1) 58%, hsl(237, 46%, 15%) 100%);  
+}
+
+.modal-header {
+    border: none;
+}
+
+label{
+    color: rgb(255, 255, 255);
+}
+
+.modalCheck {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}

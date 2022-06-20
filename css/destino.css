@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  height: 50vh;
+  background-image: url(../images/FondoHero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: bg-pan-tl 15s infinite alternate; }
+  .header .bg-dark {
+    z-index: 20;
+    width: 100%; }
+    .header .bg-dark .a {
+      color: #f4f4f4 !important;
+      font-family: 'Montserrat';
+      font-size: 23px;
+      padding: 10px 15px;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 3px 3px 2px rgba(0, 0, 2, 0.7); }
+  .header .text-header {
+    min-height: 100vh;
+    color: #f4f4f4;
+    font-family: 'Montserrat'; }
+    .header .text-header h2 {
+      font-family: 'Anton'; }
+      .header .text-header h2 span {
+        letter-spacing: 5px;
+        color: #146bb3e0;
+        font-size: 1.3em;
+        font-family: 'Anton';
+        margin: 0 0 0 5px; }
+    .header .text-header p {
+      font-size: 1em; }
+    .header .text-header .btn-yo {
+      padding: 7px 12px;
+      color: #f4f4f4;
+      background-color: #146bb3e0;
+      border-radius: 5%; }
+  .header a {
+    color: #f4f4f4 !important;
+    font-family: 'Montserrat';
+    font-size: 23px;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 2px rgba(0, 0, 2, 0.7); }
+
+h3 {
+  padding: 1rem;
+  color: #146bb3e0; }
+
+.bg-pan-tl {
+  -webkit-animation: bg-pan-tl 20s linear forwards;
+  animation: bg-pan-tl 20s linear forwards; }
+
+section {
+  margin-bottom: 2rem; }
+
+.menuUl {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #fff; }
+
+.bg-pan-tl {
+  -webkit-animation: bg-pan-tl 20s linear forwards;
+  animation: bg-pan-tl 20s linear forwards; }
+
+.navg a:hover {
+  background-color: #1b70b6a2;
+  border-radius: 10%; }
+
+.btn-yo:hover {
+  color: black;
+  box-shadow: 8px 10px 10px 1px rgba(0, 0, 0, 0.5); }
+
+.header:before {
+  content: "none";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 8, 8, 0.8), rgba(19, 18, 0, 0)); }
+  @media (min-width: 768px) {
+    .header:before .bg-dark {
+      background-color: transparent !important; } }
+  @media (min-width: 992px) {
+    .header:before .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1rem; } }
+
+@-webkit-keyframes bg-pan-tl {
+  0% {
+    background-position: 100% 100%; }
+  100% {
+    background-position: 0% 0%; } }
+
+@keyframes bg-pan-tl {
+  0% {
+    background-position: 100% 100%; }
+  100% {
+    background-position: 0% 0%; } }
+
+body {
+  background-color: #ececec; }
+  body #containter-cards {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 2%; }
+
+h5 {
+  color: #2f7bbe; }
+
+@media (max-width: 768px) {
+  .card {
+    border: none; } }
+
+.navg a {
+  color: #f4f4f4 !important;
+  font-family: 'Montserrat';
+  font-size: 23px;
+  padding: 10px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 2px rgba(0, 0, 2, 0.7); }
+
+.heroQuienesSomos {
+  justify-content: space-around; }
+
+.cardLavadero {
+  margin-bottom: 1rem; }
+
+.trabajo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  position: relative; }
+
+.trabajo::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  background: #DCDFD9;
+  border: 2px solid #1b3231;
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 9px);
+  left: calc(50% - 9px); }
+
+.modelo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: calc(42% + 20px);
+  font-size: 32px;
+  font-weight: normal; }
+
+.foto {
+  width: 42%;
+  border: 10px solid #fff;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+
+.foto::after {
+  content: "";
+  display: block;
+  border: 20px solid transparent;
+  border-left: 20px solid #fff;
+  position: absolute;
+  right: -50px;
+  top: calc(50% - 20px); }
+
+.foto img {
+  width: 100%;
+  vertical-align: top; }
+
+.trabajo:nth-child(even) {
+  flex-direction: row-reverse; }
+
+.trabajo:nth-child(even) .modelo {
+  justify-content: end; }
+
+.trabajo:nth-child(even) .foto::after {
+  content: "";
+  border: 20px solid transparent;
+  border-right: 20px solid #fff;
+  right: initial;
+  left: -50px; }
+
+.bodyServicios {
+  background: linear-gradient(0deg, #ffffff 0%, #267ca1 100%); }
+
+.servicios {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-evenly; }
+  .servicios .serviciosBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: bg-pan-tl 30s infinite alternate; }
+    .servicios .serviciosBody .serviciosTitulo {
+      color: #ffffffe0;
+      z-index: 1; }
+    .servicios .serviciosBody .serviciosBodyText {
+      padding: 1rem;
+      color: white;
+      z-index: 1; }
+
+.serviciosBody:before {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 8, 8, 0.356), rgba(19, 18, 0, 0)); }
+
+.menuUL {
+  margin: -15px;
+  padding-bottom: 1rem; }
+
+li {
+  padding: 1rem;
+  margin-bottom: -15px; }
+
+.modal-body {
+  background: #22c1c3;
+  background: linear-gradient(0deg, #22c1c3 0%, #1d7a89 0%, #1d7f8d 0%, #1f629a 58%, #151638 100%); }
+
+.modal-header {
+  border: none; }
+
+label {
+  color: white; }
+
+.modalCheck {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem; }
