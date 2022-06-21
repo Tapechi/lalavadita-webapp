@@ -150,5 +150,10 @@ h5{
 		background-image: linear-gradient(rgba(0, 8, 8, 0.356), rgba(19,18,0, 0));
 		
 }
+
+.stretched-link::before {
+	color: red;
+	background-color: red;
+}
 	
 	
