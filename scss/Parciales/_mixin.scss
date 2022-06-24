@@ -1,0 +1,23 @@
+@mixin h2Hero {
+    font-family: 'Anton';
+    font-size: 2rem;
+    color: map-get($colores, "myWhite" );
+}
+
+@mixin boton {
+    padding: 7px 12px;
+    color: map-get($colores, "myWhite" );
+    background-color:  map-get($colores, "myBlue" );
+    border-radius: 5%;
+}
+
+@mixin movil
+    { @media (max-width: 768px){
+        @content;    
+    }
+
+}
+
+@mixin none {
+    list-style: none;
+}

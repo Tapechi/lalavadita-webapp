@@ -1,26 +1,43 @@
 body{
-    background-color: rgb(236, 236, 236);
+    background:  map-get($colores, "myBackground" );
     #containter-cards{
         padding: 1rem;
-        background-color: white;
+        background-color:  map-get($colores, "myWhite" );
         border-radius: 2%;
     }
+	
 }
+
+.card{
+
+	.card-button {
+		@include boton;
+		border: none;
+	}
+	@include movil {
+		
+		margin-bottom: 3rem;
+	}
+	
+}
+		
+ h3 {
+	 padding: 1rem;
+	 color:  map-get($colores, "myBlue" )
+	
+	}
+	@include movil {
+		h3{color:  map-get($colores, "myWhite" ); 
+		z-index: -1;
+		}
+	}
 
 h5{
-    color: #2f7bbe; 
-}
-
-@media (max-width: 768px){
-    .card{
-        border: none;
-        
-    }
-    
+    color:  map-get($colores, "myBlue" ); 
 }
 
 .navg a{
-    color: #f4f4f4!important;
+    color:  map-get($colores, "myWhite" )!important;
     font-family: 'Montserrat' ;
     font-size: 23px;
     padding: 10px 15px;
@@ -35,6 +52,7 @@ h5{
 
   .cardLavadero {
     margin-bottom: 1rem;
+	
   }
 
 .trabajo {
@@ -50,8 +68,8 @@ h5{
 	width: 14px;
 	height: 14px;
 	border-radius: 100px;
-	background: #DCDFD9;
-	border: 2px solid #1b3231;
+	background:  map-get($colores, "myWhite" );
+	border: 2px solid #000000;
 	position: absolute;
 	z-index: 2;
 	top: calc(50% - 9px);
@@ -59,6 +77,8 @@ h5{
 }
 
 .modelo {
+	@include h2Hero;
+	color: map-get($colores, "myBlue" );
 	display: flex;
 	align-items: center;
 	justify-content: start;
@@ -86,8 +106,14 @@ h5{
 
 .foto img {
 	width: 100%;
+	height: 100%;
 	vertical-align: top;
+	background-image: url(../images/FondoHero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 
 .trabajo:nth-child(even) {
 	flex-direction: row-reverse;
@@ -106,7 +132,7 @@ h5{
 }
 
 .bodyServicios{
-	background: linear-gradient(0deg, #ffffff 0%, #267ca1 100%);
+	background:  map-get($colores, "myBackground" );
 }
 
 .servicios{
@@ -129,12 +155,12 @@ h5{
     	background-size: cover;
     	animation: bg-pan-tl 30s infinite alternate;
 		.serviciosTitulo{
-			color: #ffffffe0;
+			color:  map-get($colores, "myWhite" );
 			z-index: 1;
 		}
 		.serviciosBodyText{
 			padding: 1rem;
-			color: white;
+			color:  map-get($colores, "myWhite" );
 			z-index: 1;
 		}	
 	}
@@ -151,9 +177,25 @@ h5{
 		
 }
 
-.stretched-link::before {
-	color: red;
-	background-color: red;
+
+.formulario {
+	height: 90vh;
+	
 }
-	
-	
+
+.menuUL {
+	margin: -15px;
+	padding-bottom: 1rem
+  }
+  
+  .menuLifoter{
+	 @include none;
+	  padding: 1rem;
+	  margin-bottom: -15px;
+	}
+  
+	li {
+	  @extend .menuLifoter;
+	  padding: 1px;
+	  
+	}

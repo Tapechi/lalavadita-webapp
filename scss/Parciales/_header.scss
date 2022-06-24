@@ -8,11 +8,16 @@
     background-position: center;
     background-size: cover;
     animation: bg-pan-tl 15s infinite alternate;
+    @include movil{
+        height: auto;
+        animation: bg-pan-tl 30s infinite alternate;
+        min-height: auto;
+    }
     .bg-dark{
         z-index: 20;
         width: 100%;
         .a{
-            color: #f4f4f4!important;
+            color: map-get($colores, "myWhite" )!important;
             font-family: 'Montserrat' ;
             font-size: 23px;
             padding: 10px 15px;
@@ -23,32 +28,46 @@
     }
     .text-header {
         min-height: 100vh;
-        color: #f4f4f4;
+        color:  map-get($colores, "myWhite" );
         font-family: 'Montserrat';
-        h2{
-            font-family: 'Anton';
-            
-            span{
+        .h2-header{
+            @include h2Hero;
+            letter-spacing: 5px;
+            span {
                 letter-spacing: 5px;
-                color: #146bb3e0;
-                font-size: 1.3em;
-                font-family: 'Anton';
+                color: map-get($colores, "myBlue" );
+                font-size: 3rem;
                 margin: 0 0 0 5px;  
-             
+            }   
+        }
+        
+    p{
+        font-size: 1rem; 
+    }
+    .btn-yo{
+        @include boton;
+    }
+}
+
+@include movil
+    {
+        .text-header{
+            min-height: 50vh;
+                .h2-header{
+                    letter-spacing: 1px;
+                    font-size: 1.5rem;
+                    span{
+                        letter-spacing: 1px;
+                        font-size: 2rem;
+                    }
+                }
             }
-        }
-        p{
-            font-size: 1em; 
-        }
-        .btn-yo{
-            padding: 7px 12px;
-            color: #f4f4f4;
-            background-color: #146bb3e0;
-            border-radius: 5%;
-        }
-    }   
+        }      
+        
+
+
     a{
-        color: #f4f4f4!important;
+        color:  map-get($colores, "myBlue" )!important;
         font-family: 'Montserrat' ;
         font-size: 23px;
         padding: 10px 15px;
@@ -56,21 +75,13 @@
         text-transform: uppercase;
         text-shadow: 3px 3px 2px rgba(0, 0, 2, 0.7);
         
-    }
-
-    
+    }  
 }
-
-h3 {
-    padding: 1rem;
-    color: #146bb3e0;
-  }
 
 .bg-pan-tl {
 	-webkit-animation: bg-pan-tl 20s linear forwards;
 	        animation: bg-pan-tl 20s linear forwards;
 }
-
 
 section {
     margin-bottom: 2rem;
@@ -79,8 +90,7 @@ section {
 .menuUl {
     display: flex;
     justify-content: center;
-    list-style: none;
-    background-color: #fff;
+    background-color: map-get($colores, "myWhite" );
    
 }
  
@@ -89,11 +99,9 @@ section {
     animation: bg-pan-tl 20s linear forwards;
 }
 
-
-  
   
 .navg a:hover{
-    background-color: #1b70b6a2;
+    background-color:  map-get($colores, "myBlue" );
     border-radius: 10%;
     
 }

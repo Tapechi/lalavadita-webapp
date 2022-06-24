@@ -3,8 +3,14 @@
   padding-bottom: 1rem
 }
 
-li{
+.menuLifoter{
+   @include none;
     padding: 1rem;
     margin-bottom: -15px;
+  }
 
+  li {
+    @extend .menuLifoter;
+    padding: 1px;
+    
   }
