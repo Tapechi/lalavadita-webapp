@@ -125,16 +125,17 @@ body {
     background-color: #ffffffe0;
     border-radius: 2%; }
 
-.card .card-button {
-  padding: 7px 12px;
-  color: #ffffffe0;
-  background-color: #146bb3e0;
-  border-radius: 5%;
+.card {
   border: none; }
-
-@media (max-width: 768px) {
-  .card {
-    margin-bottom: 3rem; } }
+  .card .card-button {
+    padding: 7px 12px;
+    color: #ffffffe0;
+    background-color: #146bb3e0;
+    border-radius: 5%;
+    border: none; }
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 3rem; } }
 
 h3 {
   padding: 1rem;
@@ -159,6 +160,8 @@ h5 {
 
 .heroQuienesSomos {
   justify-content: space-around; }
+  .heroQuienesSomos .heroQuienesSomosTexto {
+    color: #fcfdfd; }
 
 .cardLavadero {
   margin-bottom: 1rem; }
@@ -272,6 +275,19 @@ h5 {
 
 .formulario {
   height: 90vh; }
+  @media (max-width: 768px) {
+    .formulario {
+      height: auto; } }
+  .formulario .formularioSection {
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 5%;
+    box-shadow: 5px 5px 15px #286a88;
+    background: #e7d7d76b; }
+    .formulario .formularioSection .formularioTexto {
+      color: #146bb3e0; }
+    .formulario .formularioSection .formularioLabel {
+      color: #146bb3e0; }
 
 .menuUL {
   margin: -15px;

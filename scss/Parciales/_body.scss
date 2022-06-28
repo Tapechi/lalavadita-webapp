@@ -9,14 +9,14 @@ body{
 }
 
 .card{
-
+	border: none;
 	.card-button {
 		@include boton;
 		border: none;
 	}
 	@include movil {
-		
 		margin-bottom: 3rem;
+		
 	}
 	
 }
@@ -24,6 +24,7 @@ body{
  h3 {
 	 padding: 1rem;
 	 color:  map-get($colores, "myBlue" )
+	 
 	
 	}
 	@include movil {
@@ -47,7 +48,10 @@ h5{
   }
 
   .heroQuienesSomos{
-    justify-content: space-around
+    justify-content: space-around;
+	.heroQuienesSomosTexto{
+		color: rgb(252, 253, 253);
+	}
   }
 
   .cardLavadero {
@@ -180,8 +184,27 @@ h5{
 
 .formulario {
 	height: 90vh;
+	@include movil {
+	height: auto;	
 	
+	}
+	.formularioSection{
+		border: none;
+		padding: 1rem 1rem;
+		border-radius: 5%;
+		box-shadow: 5px 5px 15px #286a88;
+		background: #e7d7d76b;
+		.formularioTexto{
+			color:map-get($colores, "myBlue" );
+			
+		}
+		.formularioLabel {
+			color: map-get($colores, "myBlue" );
+			
+		}
+	}	
 }
+
 
 .menuUL {
 	margin: -15px;
@@ -199,3 +222,5 @@ h5{
 	  padding: 1px;
 	  
 	}
+
+	
