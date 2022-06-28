@@ -161,7 +161,10 @@ h5 {
 .heroQuienesSomos {
   justify-content: space-around; }
   .heroQuienesSomos .heroQuienesSomosTexto {
-    color: #fcfdfd; }
+    color: #fcfdfd;
+    font-weight: bolder;
+    text-shadow: 7px 4px 5px black;
+    font-size: large; }
 
 .cardLavadero {
   margin-bottom: 1rem; }

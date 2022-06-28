@@ -51,13 +51,17 @@ h5{
     justify-content: space-around;
 	.heroQuienesSomosTexto{
 		color: rgb(252, 253, 253);
+		font-weight: bolder;
+		text-shadow: 7px 4px 5px rgb(0, 0, 0);
+		font-size: large;
+
 	}
+	
   }
 
   .cardLavadero {
     margin-bottom: 1rem;
-	
-  }
+	}
 
 .trabajo {
 	display: flex;
