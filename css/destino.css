@@ -166,8 +166,20 @@ h5 {
     text-shadow: 7px 4px 5px black;
     font-size: large; }
 
+.card {
+  overflow: hidden; }
+
 .cardLavadero {
-  margin-bottom: 1rem; }
+  margin-bottom: 3rem; }
+  .cardLavadero img {
+    margin-bottom: 2rem;
+    -moz-trasition: all 0.8s;
+    -webkit-trasition: all 0.8s;
+    transition: all 0.8s; }
+
+.cardLavadero:hover img {
+  -moz-transforms: scale(1.2);
+  transform: scale(1.2); }
 
 .trabajo {
   display: flex;
