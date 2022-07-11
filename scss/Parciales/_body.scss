@@ -28,7 +28,7 @@ body{
 	
 	}
 	@include movil {
-		h3{color:  map-get($colores, "myWhite" ); 
+		h3{color:map-get($colores, "myWhite" ); 
 		z-index: -1;
 		}
 	}
@@ -50,7 +50,7 @@ h5{
   .heroQuienesSomos{
     justify-content: space-around;
 	.heroQuienesSomosTexto{
-		color: rgb(252, 253, 253);
+		color:map-get($colores, "myWhite" );
 		font-weight: bolder;
 		text-shadow: 7px 4px 5px rgb(0, 0, 0);
 		font-size: large;
@@ -83,6 +83,18 @@ h5{
 
 		}
 	
+.mapa {
+	margin-bottom: 2rem;
+		-moz-trasition: all 0.8s;
+		-webkit-trasition: all 0.8s;
+		transition: all 0.8s;
+}
+
+.mapa:hover{
+	-moz-transforms: scale(1.2);
+			transform: scale(1.2);
+}
+
 
 .trabajo {
 	display: flex;
