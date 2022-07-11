@@ -207,6 +207,18 @@ h5{
 		
 }
 
+.comparativo{
+	h2 {
+		color:map-get($colores, "myWhite" );
+		margin-bottom: 1rem;
+	}
+	th {
+		color:map-get($colores, "myWhite" );
+	}
+	td {
+		color:map-get($colores, "myWhite" );
+	}
+}
 
 .formulario {
 	height: 90vh;

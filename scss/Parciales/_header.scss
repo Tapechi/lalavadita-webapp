@@ -3,7 +3,7 @@
     width: 100%;
     min-height: 100vh;
     height: 50vh;
-    background-image: url(../images/FondoHero.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/FondoHero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -112,13 +112,7 @@ section {
 }
 
 .header:before{
-    content: "none";
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    top:0;
-    left: 0;
-    background-image: linear-gradient(rgba(0,8,8,0.8), rgba(19,18,0, 0));
+    
     
     @media (min-width: 768px){
         .bg-dark{
